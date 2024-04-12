@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Function Input</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+  }
+  .input-container {
+    margin-bottom: 20px;
+  }
+  .math-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+</style>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#home">POLYNOMIAL SOLVER</a>
+            <a href="#home">by regular falsi method</a>
+          </div>
+          
+    </nav>
+  <div class="input-container">
+    <label for="functionInput">Enter the function f(x):</label>
+    <input type="text" id="functionInput" style="width: 300px;">
+  </div>
+  <div class="input-container">
+    <label for="lowerBound">Enter lower bound a:</label>
+    <input type="number" id="lowerBound" step="any">
+  </div>
+  <div class="input-container">
+    <label for="upperBound">Enter upper bound b:</label>
+    <input type="number" id="upperBound" step="any">
+  </div>
+  <button onclick="confirmFunction()">Confirm</button>
+  <div class="math-container" id="functionDisplay"></div>
+
+  <div class="footer">
+    <p>Copyright &copy; HarshitBhai 2024</p>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
